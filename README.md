@@ -1,5 +1,6 @@
 # CryptoMalloc
 Encrypt your RAM!!! Allows you to encrypt the "physical" memory of any process.
+Please use CryptoMalloc 2 (https://github.com/bahusvel/CryptoMalloc-2) a new better more determenistic RAM encryption technology. This repository is now ExtraMalloc, a repository that overides malloc to provide useful functionality, like letting your programs use hard drive as RAM directly (avoiding the operating system and swap).
 
 # How does it work?
 CryptoMalloc as the name suggest overloads the libc standard malloc function and replaces it with the one that will map processes virtual memory to a file on a file system. But how does it encrypt the RAM?!?! It doesn't on its own, it uses a RAM Disk (could be a normal disk as well) with Full Drive Encryption (FDE) enabled. Hence everything that is written to the RAM Disk will be encrypted and decrypted as needed. 
